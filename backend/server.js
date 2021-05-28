@@ -20,7 +20,7 @@ app.use(cors());
 //{ credentials: true, origin: 'http://localhost:3000'}
 //whoreface
 
-mongoose.connect(process.env.MONGODB_URL || "mongodb+srv://MissS:ASHivy11@cluster0.jcl0m.mongodb.net/Thrillful?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
