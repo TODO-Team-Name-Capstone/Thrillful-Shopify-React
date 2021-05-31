@@ -14,25 +14,25 @@ const Products = () => {
 
     if (!products) return <div>Loading...</div>
     return (
-        <Box p="2rem">
+        <Box p="5rem">
             <Grid templateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)"]} m="auto">
                 {
                     products.map(product => (
                         <Link to={`product/${product.handle}`} key={product.id}>
                             <Center>
-                            <Box _hover={{ opacity: '80%' }} textAlign='center'/*move text here*/>
-                                <Image src={product.images[0].src} p="2rem" h="25rem" w="25rem" m="2.5rem" /> 
-                               <Center>
-                               <Text style={{ fontWeight: "bold" }}>
-                                    {product.title}
-                                </Text>
-                               </Center>
-                               <Center>
-                               <Text>
-                                    ${product.variants[0].price}
-                                </Text>
-                               </Center>
-                            </Box>
+                                <Box _hover={{ opacity: '80%' }} textAlign='center'/*move text here*/>
+                                    <Image src={product.images[0].src} p="2rem" h="25rem" w="25rem" m="2.5rem" />
+                                    <Center>
+                                        <Text style={{ fontWeight: "bold" }}>
+                                            {product.title}
+                                        </Text>
+                                    </Center>
+                                    <Center>
+                                        <Text>
+                                            ${product.variants[0].price}
+                                        </Text>
+                                    </Center>
+                                </Box>
                             </Center>
                         </Link>
                     ))

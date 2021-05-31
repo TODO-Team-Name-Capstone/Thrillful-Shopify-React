@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons';
+//import { SocialIcon } from 'react-social-icons';
 import { Grid, Box, Text, VStack, HStack } from '@chakra-ui/react'
 
 const Footer = () => {
     return (
-        <Box backgroundColor="#000000" color="#ffffff">
+        <Box backgroundColor="#000000" color="#ffffff" position="fixed" bottom={0} left={0} right={0}>
             <Grid templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)"]}>
                 <VStack>
                     <HStack p="1rem">
